@@ -1,5 +1,16 @@
-# Favicon Grabber [![license](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](LICENSE)
+# Favicon Grabber Serverless [![license](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](LICENSE)
 
+This is a fork of the original favicongrabber service. Deployment is super easy if you have an AWS account and AWS CLI configured. Full docs can be found on the [original website](https://favicongrabber.com/).
+
+```
+npm install serverless -g
+```
+
+```
+serverless deploy
+```
+
+----
 [Favicon Grabber](https://favicongrabber.com/) is an online service to grab favicons from any domain.
 
 <p align="center">
