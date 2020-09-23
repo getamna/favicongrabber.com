@@ -1,6 +1,6 @@
 # Favicon Grabber Serverless [![license](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](LICENSE)
 
-This is a fork of the original favicongrabber service. Deployment is super easy if you have an AWS account and AWS CLI configured. Full docs can be found on the [original website](https://favicongrabber.com/).
+This is a fork of the original favicongrabber service to make it serverless compatible. Deployment is super easy if you have an AWS account and AWS CLI configured. Full docs can be found on the [original website](https://favicongrabber.com/).
 
 ```
 npm install serverless -g
