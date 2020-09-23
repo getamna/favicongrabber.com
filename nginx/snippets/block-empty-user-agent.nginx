@@ -1,5 +1,0 @@
-# block requests with empty `User-Agent` header
-
-if ($http_user_agent = "") {
-  return 444;
-}

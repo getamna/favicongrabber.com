@@ -1,7 +1,0 @@
-# serving static files
-
-rewrite ^/(.+)\.html$ /$1 permanent;
-
-location / {
-  try_files $uri $uri.html =404;
-}

@@ -1,7 +1,15 @@
 .*/
 build/
 node_modules/
+serverless/node_modules/
 
 .env
 
 nginx/server.nginx
+
+# package directories
+node_modules
+jspm_packages
+A
+# Serverless directories
+.serverless

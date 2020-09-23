@@ -1,0 +1,23 @@
+service:
+  name: favicon-grabber
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+
+functions:
+  api:
+    handler: handler.main
+    events:
+      - http:
+          path: / # this matches the base path
+          method: ANY
+          cors: true
+      - http:
+          path: /{any+} # this matches any path, the token 'any' doesn't mean anything special
+          method: ANY
+          cors: true
